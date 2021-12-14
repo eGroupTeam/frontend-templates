@@ -48,6 +48,10 @@ app
     // Default catch-all handler to allow Next.js to handle all other routes
     expressApp.all("*", (req, res) => handle(req, res));
 
+    // In some cases when proxying requests to the Next.js dev server,
+    // you will need to ensure the upgrade request is handled correctly.
+    expressApp.all("/_next/webpack-hmr", (req, res) => handle(req, res));
+
     // start the HTTP/2 server with express
     // Reference, https://itnext.io/using-http-2-with-next-js-express-917791ca249b
     spdy.createServer(options, expressApp).listen(parseInt(port, 10), () => {
