@@ -4,7 +4,7 @@ import { RootState } from "redux/configureAppStore";
 /**
  * API States
  */
-const getUiStates = (state: RootState) => state.pages.Basic;
+const getUiStates = (state: RootState) => state.publicPages.Basic;
 
 export const getCounts = createSelector(
   getUiStates,

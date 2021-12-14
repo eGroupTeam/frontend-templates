@@ -2,13 +2,13 @@ import { dialogs } from "@eGroupTeam/redux-modules/dialogs";
 import { snackbars } from "@eGroupTeam/redux-modules/snackbars";
 import { configureStore } from "@reduxjs/toolkit";
 
-import { pages } from "./pages";
+import { publicPages } from "./publicPages";
 
 export const store = configureStore({
   reducer: {
     dialogs,
     snackbars,
-    pages,
+    publicPages,
   },
   devTools: process.env.NODE_ENV !== "production",
 });

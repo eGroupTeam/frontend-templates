@@ -40,10 +40,6 @@ const Layout = function Layout({
             Private Pages
           </MuiLink>{" "}
           |{" "}
-          <Link href="/about">
-            <MuiLink cursor="pointer">About</MuiLink>
-          </Link>{" "}
-          |{" "}
           <Link href="/posts">
             <MuiLink cursor="pointer">Post List</MuiLink>
           </Link>{" "}

@@ -22,11 +22,11 @@ const PrivateLayout = function PrivateLayout({
       </Head>
       <header>
         <nav>
-          <PrivateLink to="/me">Private Home</PrivateLink> |{" "}
-          <PrivateLink to="/me/dashboard">Private Dashboard</PrivateLink> |{" "}
           <Link href="/">
             <MuiLink cursor="pointer">Go home</MuiLink>
-          </Link>
+          </Link>{" "}
+          | <PrivateLink to="/me">Private Home</PrivateLink> |{" "}
+          <PrivateLink to="/me/dashboard">Private Dashboard</PrivateLink>
         </nav>
       </header>
       <h1>Private Pages</h1>
