@@ -22,11 +22,8 @@ module.exports = {
   },
   rules: {
     "import/prefer-default-export": "off",
-    // https://material-ui.com/components/links/#accessibility
-    "jsx-a11y/anchor-is-valid": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-shadow": "off",
+    "no-restricted-exports": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off"
   },
 };

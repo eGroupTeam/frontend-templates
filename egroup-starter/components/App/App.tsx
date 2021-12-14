@@ -20,11 +20,7 @@ const GlobalSnackbar = withReduxSnackbar(SNACKBAR)<
 
 const egTheme = createEgTheme();
 
-function App({
-  Component,
-  pageProps,
-}: NextAppProps) {
-
+const App = function App({ Component, pageProps }: NextAppProps) {
   // Fixed material-ui style SSR issue.
   // Example:
   // https://github.com/mui-org/material-ui/tree/next/examples/nextjs
@@ -40,16 +36,8 @@ function App({
     <>
       <Head>
         <title>eGroupAI</title>
-        <meta
-          name="description"
-          content="description"
-          key="description"
-        />
-        <meta
-          property="og:title"
-          content="og:title"
-          key="ogTitle"
-        />
+        <meta name="description" content="description" key="description" />
+        <meta property="og:title" content="og:title" key="ogTitle" />
         <meta
           property="og:description"
           content="og:description"
@@ -96,6 +84,6 @@ function App({
       </CookiesProvider>
     </>
   );
-}
+};
 
 export default App;

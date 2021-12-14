@@ -1,20 +1,24 @@
-import React, { ReactNode } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
-import { useCookies } from 'react-cookie'
-import { useRouter } from 'next/router'
+import React, { ReactNode } from "react";
+import Link from "next/link";
+import Head from "next/head";
+import MuiLink from "@eGroupTeam/material/Link";
+import { useCookies } from "react-cookie";
+import { useRouter } from "next/router";
 
 type Props = {
-  children?: ReactNode
-  title?: string
-}
+  children?: ReactNode;
+  title?: string;
+};
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => {
+const Layout = function Layout({
+  children,
+  title = "This is the default title",
+}: Props) {
   const router = useRouter();
   const [, setCookie] = useCookies();
-  
+
   const handleClick = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setCookie("hasLoginCookie", "true");
     router.push("/me");
   };
@@ -29,35 +33,33 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
       <header>
         <nav>
           <Link href="/">
-            <a>Home</a>
-          </Link>
-          {' '}|{' '}
-          <a href="" onClick={handleClick}>Private Pages</a>
-          {' '}|{' '}
+            <MuiLink cursor="pointer">Home</MuiLink>
+          </Link>{" "}
+          | <MuiLink onClick={handleClick}>Private Pages</MuiLink> |{" "}
           <Link href="/about">
-            <a>About</a>
-          </Link>
-          {' '}|{' '}
+            <MuiLink cursor="pointer">About</MuiLink>
+          </Link>{" "}
+          |{" "}
           <Link href="/posts">
-            <a>Post List</a>
-          </Link>
-          {' '}|{' '}
+            <MuiLink cursor="pointer">Post List</MuiLink>
+          </Link>{" "}
+          |{" "}
           <Link href="/redux-examples">
-            <a>Redux Examples</a>
-          </Link>
-          {' '}|{' '}
+            <MuiLink cursor="pointer">Redux Examples</MuiLink>
+          </Link>{" "}
+          |{" "}
           <Link href="/react-hook-form-examples">
-            <a>React Hook Form Examples</a>
+            <MuiLink cursor="pointer">React Hook Form Examples</MuiLink>
           </Link>
         </nav>
       </header>
       {children}
       <footer>
         <hr />
-        <span>I'm here to stay (Footer)</span>
+        <span>I&apos;m here to stay (Footer)</span>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

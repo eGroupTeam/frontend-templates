@@ -1,21 +1,23 @@
-import Layout from 'components/Layout'
-import Link from 'next/link'
+import React from "react";
+import Layout from "components/Layout";
+import MuiLink from "@eGroupTeam/material/Link";
+import Link from "next/link";
 
-const ReduxExampleList = () => (
-  <Layout title="Redux Examples">
-    <h1>Redux Example List</h1>
-    <p>
-      Redux Examples.
-    </p>
-    <p>You are currently on: /redux-examples</p>
-    <ul>
-      <li>
-        <Link href="redux-examples/basic">
-          <a>Basic Example</a>
-        </Link>{' '}
-      </li>
-    </ul>
-  </Layout>
-)
+const ReduxExampleList = function ReduxExampleList() {
+  return (
+    <Layout title="Redux Examples">
+      <h1>Redux Example List</h1>
+      <p>Redux Examples.</p>
+      <p>You are currently on: /redux-examples</p>
+      <ul>
+        <li>
+          <Link href="redux-examples/basic">
+            <MuiLink cursor="pointer">Basic Example</MuiLink>
+          </Link>{" "}
+        </li>
+      </ul>
+    </Layout>
+  );
+};
 
-export default ReduxExampleList
+export default ReduxExampleList;

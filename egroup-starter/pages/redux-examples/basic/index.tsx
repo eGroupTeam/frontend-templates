@@ -1,11 +1,12 @@
+import React from "react";
 import Layout from "components/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "redux/configureAppStore";
 
-import { decrement,increment } from "./redux";
+import { decrement, increment } from "./redux";
 import { getCounts } from "./selectors";
 
-const Basic = () => {
+const Basic = function Basic() {
   const dispatch = useDispatch<AppDispatch>();
   const counts = useSelector(getCounts);
 

@@ -1,18 +1,18 @@
-import Button from "@eGroupTeam/material/Button"
-import TextField from "@eGroupTeam/material/TextField"
+import Button from "@eGroupTeam/material/Button";
+import TextField from "@eGroupTeam/material/TextField";
 import Typography from "@eGroupTeam/material/Typography";
-import React, { useState } from 'react'
-import { Controller,useForm } from "react-hook-form";
+import React, { useState } from "react";
+import { Controller, useForm } from "react-hook-form";
 import { BasicExampleFormInput } from "interfaces/form";
 import Layout from "components/Layout";
 
 // Please read react-hook-form official doc for more details.
 // https://react-hook-form.com/get-started
-const BasicExample = () => {
+const BasicExample = function BasicExample() {
   const { control, handleSubmit } = useForm<BasicExampleFormInput>();
-  const [data, setData] = useState<BasicExampleFormInput>()
+  const [data, setData] = useState<BasicExampleFormInput>();
 
-  const onSubmit = (data: BasicExampleFormInput) => setData(data);
+  const onSubmit = (values: BasicExampleFormInput) => setData(values);
 
   return (
     <Layout title="React Hook Form Basic Example">
@@ -21,9 +21,7 @@ const BasicExample = () => {
         <Controller
           control={control}
           name="title"
-          render={({
-            field: { onChange, value },
-          }) => (
+          render={({ field: { onChange, value } }) => (
             <TextField
               label="Title"
               onChange={onChange}
@@ -37,7 +35,7 @@ const BasicExample = () => {
         </div>
       </form>
     </Layout>
-  )
-}
+  );
+};
 
-export default BasicExample
+export default BasicExample;

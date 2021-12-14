@@ -1,6 +1,8 @@
+import React from "react";
+import RouterRoot from "components/RouterRoot";
 
-import RouterRoot from 'components/RouterRoot'
+const Me = function Me() {
+  return <RouterRoot />;
+};
 
-const Me = () => <RouterRoot />
-
-export default Me
+export default Me;

@@ -4,7 +4,7 @@ import PrivateLayout from "components/PrivateLayout";
 import React from "react";
 import usePosts from "utils/usePosts";
 
-const Home = () => {
+const Home = function Home() {
   const { data } = usePosts();
 
   if (!data) {
