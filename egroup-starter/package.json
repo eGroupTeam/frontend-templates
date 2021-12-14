@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "dev-https": "local-ssl-proxy --key ./certificate/privateKey.key --cert ./certificate/certificate.crt --source 4000 --target 3000",
+    "dev:https": "local-ssl-proxy --key ./certificate/privateKey.key --cert ./certificate/certificate.crt --source 4000 --target 3000",
     "build": "next build && next-sitemap",
     "start": "next start",
     "test": "jest",
