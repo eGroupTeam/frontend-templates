@@ -31,6 +31,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         |{' '}
         <Link href="/redux-examples">
           <a>Redux Examples</a>
+        </Link>
+        |{' '}
+        <Link href="/react-hook-form-examples">
+          <a>React Hook Form Examples</a>
         </Link>{' '}
       </nav>
     </header>
