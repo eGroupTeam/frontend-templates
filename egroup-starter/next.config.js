@@ -15,17 +15,6 @@ module.exports = {
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: "en",
-    // By using domain routing you can configure locales to be served from different domains:
-    domains: [
-      {
-        domain: "egroupai.com",
-        defaultLocale: "en",
-      },
-      {
-        domain: "egroup.com.tw",
-        defaultLocale: "zh-tw",
-      },
-    ],
   },
   webpack: (config) => {
     // import markdown files
