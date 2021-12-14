@@ -1,5 +1,0 @@
-{
-  "watch": ["devServer"],
-  "exec": "cross-env PROXY=http://localhost NODE_ICU_DATA=./node_modules/full-icu ts-node --project tsconfig.server.json devServer/index.ts",
-  "ext": "ts"
-}
