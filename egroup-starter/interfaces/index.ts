@@ -2,7 +2,7 @@
 // and then use them in any component by importing them. For
 // example, to import the interface below do:
 //
-// import { User } from 'path/to/interfaces';
+// import { Post } from 'path/to/interfaces';
 
 export interface EntityList<T> {
   total: number;
@@ -14,7 +14,9 @@ export interface UrlParams {
   orderId?: string;
 }
 
-export type User = {
-  id: number
-  name: string
+export interface Post {
+  id: number;
+  body: string;
+  title: string;
+  userId: number;
 }

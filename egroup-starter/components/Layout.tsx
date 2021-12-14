@@ -18,16 +18,15 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <nav>
         <Link href="/">
           <a>Home</a>
-        </Link>{' '}
+        </Link>
         |{' '}
         <Link href="/about">
           <a>About</a>
-        </Link>{' '}
+        </Link>
         |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+        <Link href="/posts">
+          <a>Post List</a>
+        </Link>
         |{' '}
         <Link href="/redux-examples">
           <a>Redux Examples</a>
@@ -35,7 +34,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         |{' '}
         <Link href="/react-hook-form-examples">
           <a>React Hook Form Examples</a>
-        </Link>{' '}
+        </Link>
       </nav>
     </header>
     {children}
