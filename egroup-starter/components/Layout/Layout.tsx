@@ -35,7 +35,11 @@ const Layout = function Layout({
           <Link href="/">
             <MuiLink cursor="pointer">Home</MuiLink>
           </Link>{" "}
-          | <MuiLink onClick={handleClick}>Private Pages</MuiLink> |{" "}
+          |{" "}
+          <MuiLink cursor="pointer" onClick={handleClick}>
+            Private Pages
+          </MuiLink>{" "}
+          |{" "}
           <Link href="/about">
             <MuiLink cursor="pointer">About</MuiLink>
           </Link>{" "}
