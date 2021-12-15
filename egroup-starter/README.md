@@ -19,9 +19,9 @@ For more information, please refer to:
 - [Getting Started](https://create-react-app.dev/docs/getting-started) – How to create a new app.
 - [User Guide](https://create-react-app.dev) – How to develop apps bootstrapped with Create React App.
 
-## Create self signed certificate
+## Https develop server
 
-You'll need create self signed certificate for develop.
+If need https develop server please create self signed certificate.
 
 Use openssl
 
@@ -32,3 +32,28 @@ openssl req -x509 -out certificate.crt -keyout privateKey.key \
   -subj '/CN=localhost' -extensions EXT -config <( \
    printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
 ```
+
+And run both.
+
+```sh
+yarn dev
+yarn dev:https
+```
+
+## If you can't access npm package.
+
+Please create github personal access token and run npm login script.
+
+Step 1:
+Create github personal access token.
+Go to Settings -> Developer settings -> Personal access tokens -> Generate new token
+Select scopes: repo, read:packages
+
+Step 2:
+login with github access token.
+
+```sh
+npm login --scope=@eGroupTeam --registry=https://npm.pkg.github.com
+```
+
+Pasting the token we create in step 1 into password field.
