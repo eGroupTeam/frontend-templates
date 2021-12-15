@@ -3,7 +3,7 @@ import TextField from "@eGroupTeam/material/TextField";
 import Typography from "@eGroupTeam/material/Typography";
 import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { BasicExampleFormInput } from "interfaces/form";
+import { BasicExampleFormInput } from "interfaces";
 import Layout from "components/Layout";
 
 // Please read react-hook-form official doc for more details.
