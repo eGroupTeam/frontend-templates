@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "components/Layout";
-import MuiLink from "@eGroupTeam/material/Link";
-import Link from "next/link";
+import Link from "@eGroupTeam/material/Link";
+import NextLink from "next/link";
 
 const ReduxExamples = function () {
   return (
@@ -11,9 +11,9 @@ const ReduxExamples = function () {
       <p>You are currently on: /redux-examples</p>
       <ul>
         <li>
-          <Link href="redux-examples/basic">
-            <MuiLink cursor="pointer">Basic Example</MuiLink>
-          </Link>{" "}
+          <NextLink href="redux-examples/basic">
+            <Link cursor="pointer">Basic Example</Link>
+          </NextLink>{" "}
         </li>
       </ul>
     </Layout>

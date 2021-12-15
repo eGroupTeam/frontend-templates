@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 import Head from "next/head";
-import MuiLink from "@eGroupTeam/material/Link";
+import Link from "@eGroupTeam/material/Link";
 import { useCookies } from "react-cookie";
 import { useRouter } from "next/router";
 
@@ -30,25 +30,25 @@ const Layout = function Layout({
       </Head>
       <header>
         <nav>
-          <Link href="/">
-            <MuiLink cursor="pointer">Home</MuiLink>
-          </Link>{" "}
+          <NextLink href="/">
+            <Link cursor="pointer">Home</Link>
+          </NextLink>{" "}
           |{" "}
-          <MuiLink cursor="pointer" onClick={handleClick}>
+          <Link cursor="pointer" onClick={handleClick}>
             Private Pages
-          </MuiLink>{" "}
-          |{" "}
-          <Link href="/posts">
-            <MuiLink cursor="pointer">Post List</MuiLink>
           </Link>{" "}
           |{" "}
-          <Link href="/redux-examples">
-            <MuiLink cursor="pointer">Redux Examples</MuiLink>
-          </Link>{" "}
+          <NextLink href="/posts">
+            <Link cursor="pointer">Post List</Link>
+          </NextLink>{" "}
           |{" "}
-          <Link href="/react-hook-form-examples">
-            <MuiLink cursor="pointer">React Hook Form Examples</MuiLink>
-          </Link>
+          <NextLink href="/redux-examples">
+            <Link cursor="pointer">Redux Examples</Link>
+          </NextLink>{" "}
+          |{" "}
+          <NextLink href="/react-hook-form-examples">
+            <Link cursor="pointer">React Hook Form Examples</Link>
+          </NextLink>
         </nav>
       </header>
       {children}

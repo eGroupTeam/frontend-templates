@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
-import Link from "next/link";
+import NextLink from "next/link";
 import { Link as PrivateLink } from "react-router-dom";
-import MuiLink from "@eGroupTeam/material/Link";
+import Link from "@eGroupTeam/material/Link";
 
 type Props = {
   children?: ReactNode;
@@ -20,9 +20,9 @@ const PrivateLayout = function PrivateLayout({
       </Head>
       <header>
         <nav>
-          <Link href="/">
-            <MuiLink cursor="pointer">Go home</MuiLink>
-          </Link>{" "}
+          <NextLink href="/">
+            <Link cursor="pointer">Go home</Link>
+          </NextLink>{" "}
           | <PrivateLink to="/me">Private Home</PrivateLink> |{" "}
           <PrivateLink to="/me/dashboard">Private Dashboard</PrivateLink>
         </nav>

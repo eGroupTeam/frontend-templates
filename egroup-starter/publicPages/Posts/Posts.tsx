@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import Link from "next/link";
-import MuiLink from "@eGroupTeam/material/Link";
+import NextLink from "next/link";
+import Link from "@eGroupTeam/material/Link";
 
 import { Post } from "interfaces";
 import Layout from "components/Layout";
@@ -28,9 +28,9 @@ const WithStaticProps = function WithStaticProps({ posts }: Props) {
         ))}
       </List>
       <p>
-        <Link href="/">
-          <MuiLink cursor="pointer">Go home</MuiLink>
-        </Link>
+        <NextLink href="/">
+          <Link cursor="pointer">Go home</Link>
+        </NextLink>
       </p>
     </Layout>
   );
