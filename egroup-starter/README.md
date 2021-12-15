@@ -16,8 +16,7 @@ yarn create next-app my-app --example "https://github.com/eGroupTeam/frontend-te
 
 For more information, please refer to:
 
-- [Getting Started](https://create-react-app.dev/docs/getting-started) – How to create a new app.
-- [User Guide](https://create-react-app.dev) – How to develop apps bootstrapped with Create React App.
+- [User Guide](https://nextjs.org/docs/getting-started) – How to develop apps bootstrapped with NextJs.
 
 ## Https develop server
 
@@ -48,6 +47,7 @@ Step 1:
 Create github personal access token.
 Go to Settings -> Developer settings -> Personal access tokens -> Generate new token
 Select scopes: repo, read:packages
+<img width="690" alt="截圖 2021-12-15 17 01 17" src="https://user-images.githubusercontent.com/35906352/146155804-745c4227-a435-4ec1-94bb-cbf91c2abe0e.png">
 
 Step 2:
 login with github access token.
@@ -57,3 +57,4 @@ npm login --scope=@eGroupTeam --registry=https://npm.pkg.github.com
 ```
 
 Pasting the token we create in step 1 into password field.
+<img width="179" alt="截圖 2021-12-15 16 57 40" src="https://user-images.githubusercontent.com/35906352/146155636-93cc1de7-6f57-4004-a0ad-e36398e0eacf.png">
