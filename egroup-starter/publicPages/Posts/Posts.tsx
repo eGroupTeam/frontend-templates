@@ -5,7 +5,7 @@ import MuiLink from "@eGroupTeam/material/Link";
 
 import { Post } from "interfaces";
 import Layout from "components/Layout";
-import { List, ListItem, ListItemText } from "@mui/material";
+import { List, ListItem, ListItemText } from "@eGroupTeam/material";
 import { fetcher } from "@eGroupTeam/hooks/fetchers";
 
 type Props = {

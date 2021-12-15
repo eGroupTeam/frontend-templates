@@ -1,5 +1,5 @@
 import FixedCenter from "@eGroupTeam/material-layout/FixedCenter";
-import { CircularProgress } from "@mui/material";
+import { CircularProgress } from "@eGroupTeam/material";
 import PrivateLayout from "components/PrivateLayout";
 import React from "react";
 import usePosts from "utils/usePosts";
