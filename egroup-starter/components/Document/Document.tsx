@@ -7,9 +7,6 @@ import NextDocument, {
   DocumentContext,
 } from "next/document";
 import { ServerStyleSheets } from "@mui/styles";
-import createEgTheme from "@eGroupTeam/material/stylesheet/createEgTheme";
-
-const egTheme = createEgTheme();
 
 interface DocumentProps {
   lang: string;
@@ -65,35 +62,6 @@ export default class Document extends NextDocument<DocumentProps> {
     return (
       <Html>
         <Head>
-          <meta charSet="utf-8" />
-          <link rel="icon" href="/logo192.webp" />
-          <meta name="theme-color" content={egTheme.palette.primary.main} />
-          <link rel="apple-touch-icon" href="/logo192.webp" />
-          {/*
-            manifest.json provides metadata used when your web app is installed on a
-            user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-          */}
-          <link rel="manifest" href="/manifest.json" />
-
-          {/* FB 網域認證 */}
-          <meta 
-            name="facebook-domain-verification" 
-            content="0nhoilk01sbhuznizbl4n00bu8141l" 
-          />
-          
-          {/* 告訴爬蟲多久回來一次 */}
-          <meta name="revisit-after" content="1 days" />
-
-          {/* 搜尋引擎登記 */}
-          <meta
-            name="google-site-verification"
-            content="IykqChnStKYdnhksHQANAuKa0DVF2BBFEElqVTylmSA"
-          />
-          <meta
-            name="msvalidate.01"
-            content="D05E1782FEF56AA295AD3CA7FA4DFE90"
-          />
-
           {/* 網站的影音內容的語言不一定是文字的語言 */}
           <meta httpEquiv="Content-Language" charSet={this.props.locale} />
         </Head>

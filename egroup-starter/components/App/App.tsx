@@ -5,7 +5,7 @@ import { withReduxDialog, withReduxSnackbar } from "@eGroupTeam/redux-modules";
 import { AppProps as NextAppProps } from "next/app";
 import { CookiesProvider } from "react-cookie";
 import { Provider } from "react-redux";
-import Theme from "@eGroupTeam/material/Theme";
+import EgThemeProvider from "@eGroupTeam/material/EgThemeProvider";
 import Head from "next/head";
 import AlertDialog from "@eGroupTeam/material-module/AlertDialog";
 import Snackbar, { SnackbarProps } from "@eGroupTeam/material/Snackbar";
@@ -35,29 +35,52 @@ const App = function App({ Component, pageProps }: NextAppProps) {
   return (
     <>
       <Head>
-        <title>eGroupAI</title>
+        {/* Website Settings */}
+        <title>eGroup Starter</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="theme-color" content={egTheme.palette.primary.main} />
+        <link rel="icon" href="/logo192.png" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* SEO */}
         <meta name="description" content="description" key="description" />
-        <meta property="og:title" content="og:title" key="ogTitle" />
+        {/* 告訴爬蟲多久回來一次 */}
+        <meta name="revisit-after" content="1 days" />
+        {/* 搜尋引擎登記 */}
+        <meta
+          name="google-site-verification"
+          content="IykqChnStKYdnhksHQANAuKa0DVF2BBFEElqVTylmSA"
+        />
+        <meta name="msvalidate.01" content="D05E1782FEF56AA295AD3CA7FA4DFE90" />
+
+        {/* Org info */}
+        <meta property="og:title" content="eGroup Starter" key="ogTitle" />
         <meta
           property="og:description"
-          content="og:description"
+          content="eGroup Starter"
           key="ogDescription"
-        />
-        <meta
-          property="og:image"
-          content="images/preview/2.webp"
-          key="ogImage"
-        />
-        <meta
-          property="og:url"
-          content={process.env.NEXT_PUBLIC_SITE_URL}
-          key="ogUrl"
         />
         <meta property="og:type" content="website" key="ogType" />
         <meta
           property="og:email"
           content="service@egroupai.com"
           key="ogEmail"
+        />
+        <meta
+          property="og:url"
+          content={process.env.NEXT_PUBLIC_SITE_URL}
+          key="ogUrl"
+        />
+        <meta property="og:image" content="/logo192.png" key="ogImage" />
+
+        {/* Facebook share */}
+        <meta property="fb:app_id" content="235683754299627" />
+        {/* FB 網域認證 */}
+        <meta
+          name="facebook-domain-verification"
+          content="0nhoilk01sbhuznizbl4n00bu8141l"
         />
       </Head>
       {/* facebook shared script */}
@@ -69,7 +92,7 @@ const App = function App({ Component, pageProps }: NextAppProps) {
       /> */}
       <CookiesProvider>
         <Provider store={store}>
-          <Theme theme={egTheme}>
+          <EgThemeProvider theme={egTheme}>
             <GlobalAlertDialog />
             <GlobalSnackbar
               anchorOrigin={{
@@ -79,7 +102,7 @@ const App = function App({ Component, pageProps }: NextAppProps) {
               autoHideDuration={2000}
             />
             <Component {...pageProps} />
-          </Theme>
+          </EgThemeProvider>
         </Provider>
       </CookiesProvider>
     </>
