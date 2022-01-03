@@ -29,7 +29,7 @@ const WithStaticProps = function WithStaticProps({ posts }: Props) {
       </List>
       <p>
         <NextLink href="/">
-          <Link cursor="pointer">Go home</Link>
+          <Link sx={{ cursor: "pointer" }}>Go home</Link>
         </NextLink>
       </p>
     </Layout>

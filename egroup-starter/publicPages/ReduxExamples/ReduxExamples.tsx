@@ -12,7 +12,7 @@ const ReduxExamples = function () {
       <ul>
         <li>
           <NextLink href="redux-examples/basic">
-            <Link cursor="pointer">Basic Example</Link>
+            <Link sx={{ cursor: "pointer" }}>Basic Example</Link>
           </NextLink>{" "}
         </li>
       </ul>

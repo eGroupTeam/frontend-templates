@@ -12,7 +12,7 @@ const HookFormExamples = function () {
       <ul>
         <li>
           <NextLink href="react-hook-form-examples/basic">
-            <Link cursor="pointer">Basic Example</Link>
+            <Link sx={{ cursor: "pointer" }}>Basic Example</Link>
           </NextLink>{" "}
         </li>
       </ul>

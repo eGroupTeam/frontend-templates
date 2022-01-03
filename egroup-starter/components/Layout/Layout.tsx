@@ -36,23 +36,23 @@ const Layout = function Layout({
       <header>
         <nav>
           <NextLink href="/">
-            <Link cursor="pointer">Home</Link>
+            <Link sx={{ cursor: "pointer" }}>Home</Link>
           </NextLink>{" "}
           |{" "}
           <NextLink href="/me">
-            <Link cursor="pointer">Private Pages</Link>
+            <Link sx={{ cursor: "pointer" }}>Private Pages</Link>
           </NextLink>{" "}
           |{" "}
           <NextLink href="/posts">
-            <Link cursor="pointer">Post List</Link>
+            <Link sx={{ cursor: "pointer" }}>Post List</Link>
           </NextLink>{" "}
           |{" "}
           <NextLink href="/redux-examples">
-            <Link cursor="pointer">Redux Examples</Link>
+            <Link sx={{ cursor: "pointer" }}>Redux Examples</Link>
           </NextLink>{" "}
           |{" "}
           <NextLink href="/react-hook-form-examples">
-            <Link cursor="pointer">React Hook Form Examples</Link>
+            <Link sx={{ cursor: "pointer" }}>React Hook Form Examples</Link>
           </NextLink>
         </nav>
       </header>

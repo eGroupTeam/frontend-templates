@@ -387,10 +387,10 @@
     gulp-rename "^1.4.0"
     path "^0.12.7"
 
-"@eGroupTeam/hooks@^8.1.0":
-  version "8.1.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/hooks/8.1.0/d5e1be6850df193b92569cdfe4b68cd15e0675f33bcfcc0569719b22237596aa#c9835e08c3d791a3bad55cb5a363a9939b992764"
-  integrity sha512-kN6enBwuESFBiNRf2oiQyA4iJy5MBjZyu6Alp4Y1EYttuwgA29OLQdHNzL3XC2olocrHWPc4rmYvyirrOAfaVg==
+"@eGroupTeam/hooks@^8.3.4":
+  version "8.3.4"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/hooks/8.3.4/2ccf3c6ce045b3f4dafc7c0e80c1dfc28ce7681ecd3ff6ce6b05b300fb393546#80ae381cd4ac42ac10f10418faba25afcd3172d6"
+  integrity sha512-WCHtS8UILMa3lxjHCLauvaLbsB6gNvmo0w8AQsOm8eFW2nniHVLaDX1uG2LNVCPRiYuoM+n1ljgz/uwgd/efcg==
   dependencies:
     "@eGroupTeam/utils" "^8.1.0"
     dequal "^2.0.2"
@@ -408,34 +408,34 @@
   resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-intl/8.0.0/759fb1d5dc940fc5c678e922e618734856c8fd8ca3e0a00a19e1ebea82cda67f#7494e0e9a9cdbdbe6b00853c7d4398ee634ba834"
   integrity sha512-GSS7w50rffifgRrXpFikYq9lxsvcHzyR74/isl3EAZAewP98kDCUlVFlRlEp8wKqOlGD3JkAstg0FxNUrbx5LA==
 
-"@eGroupTeam/material-lab@^8.2.1":
-  version "8.2.1"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-lab/8.2.1/d404a8a8374e62663ac7f5435d3fec81354c00305ec34894b904747cb7920fcc#59d1eb78c5029bf8362ceee14a8c655be31d8350"
-  integrity sha512-jkZWp0DPzSQLF3TkMLfNY6W0XEI22S3WV0VrACVyKzo1goEAZ8KnzUB9bOc+MVm4bwMBsDNmAebiRzGE+fBguA==
+"@eGroupTeam/material-lab@^8.3.5":
+  version "8.3.5"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-lab/8.3.5/a4aecb8fa3142344ef3cbcf0dc63869f092660fca07d2ad8a1d4154421d34ed2#1a69620516b62c6be7b4cf8ef296bb146c8107b5"
+  integrity sha512-ewgcaSeRRKlqmxsB0pM1FMBibR14SkEUwM2ZB+TeS6C/VtfFroR1gFVF8VK31NPlmesCSysh8/Zn5l6w3GXf0A==
   dependencies:
-    "@eGroupTeam/hooks" "^8.1.0"
-    "@eGroupTeam/material" "^8.2.1"
+    "@eGroupTeam/hooks" "^8.3.4"
+    "@eGroupTeam/material" "^8.3.5"
     "@eGroupTeam/utils" "^8.1.0"
     clsx "^1.1.1"
     date-fns "^2.22.1"
     warning "^4.0.3"
 
-"@eGroupTeam/material-layout@^8.2.1":
-  version "8.2.1"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-layout/8.2.1/6fd6557fbd5dd1caa53046e01a1dd457e8cdf9d14782106aa6cdc49c98a60ca5#d5299fa382c5166b8d0dadbdccd945f4e1d66eb9"
-  integrity sha512-T6slkOppN3mam/TYhTZz2O8dbf5/luFM7EcTuiuXXbpaRZw2sv8EKL0ig4iGH3eRTqAM6XEMkHNeAj924fsjpg==
+"@eGroupTeam/material-layout@^8.3.5":
+  version "8.3.5"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-layout/8.3.5/78d92bbc3601d907bce0267c7e42fd4015fdae84f00afb21e3c9824ff506f693#57612b544116a04bb28e84a6b47640f859210a8c"
+  integrity sha512-BXvaaDshpdv0GMZJekhleMXMdAsuDJwyBa41FGjj/7MrNo10lxCsrIzUCr8+L6WL+jLMrKELv2014ZMEhzYsag==
   dependencies:
-    "@eGroupTeam/material" "^8.2.1"
+    "@eGroupTeam/material" "^8.3.5"
     clsx "^1.1.1"
 
-"@eGroupTeam/material-module@^8.2.1":
-  version "8.2.1"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-module/8.2.1/73693e0c491a5776fc2d0b9fa25d6760444d558fd78581f7b8167269ea627e7b#3100b1b405bef55b1b562f5badd259d40e54bcd1"
-  integrity sha512-GERZiYRR/W2FQIf+6ONzGp2gnUGfHHK+3LBl1zPPkBWm0xvfJ+o5WQc4XqlcKPIa4cRp1bB+GZbASf1VhA71nA==
+"@eGroupTeam/material-module@^8.5.6":
+  version "8.5.6"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-module/8.5.6/02c5347c8bd16ebba4fa0d0dd07625fa6a7ee4023e43ceadc8286821cf389a6d#b17114ee9c0d4dce6be8079b40fad5ab01db9e84"
+  integrity sha512-GJOiXvR7e/1R9mj1BvpFp4d2qWKwlVnI0oVaP2XP5wZ8vRYSeZ0qe5BOoiL9tmAF9b1SwEQ/vjzJ1OetaIvMlA==
   dependencies:
-    "@eGroupTeam/hooks" "^8.1.0"
-    "@eGroupTeam/material" "^8.2.1"
-    "@eGroupTeam/material-lab" "^8.2.1"
+    "@eGroupTeam/hooks" "^8.3.4"
+    "@eGroupTeam/material" "^8.3.5"
+    "@eGroupTeam/material-lab" "^8.3.5"
     "@eGroupTeam/material-router" "^8.0.0"
     "@eGroupTeam/utils" "^8.1.0"
     "@types/uuid" "^8.3.1"
@@ -452,21 +452,21 @@
   resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-router/8.0.0/2191607065128ba36c968bf48783af667f04e4cfce2ae2cb6eef089e5fa0ba52#b1d7c0f6bc28ab024ae2af45d98bb221513766e2"
   integrity sha512-xWwD9wvt5EJik6beIuNXdxlwucb2YuWcI2tywqidn1Gb+hkHgqIYb1J4PPJFybNtHQt06ASjVw0zNvC3a4GlWA==
 
-"@eGroupTeam/material@^8.2.1":
-  version "8.2.1"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material/8.2.1/fb09b0514656b09c3b2725231e6a5d4712d5996c7d3700643d6209e7fa4239c3#1e61f6eb7c15cb3631a28a82397a55393f289429"
-  integrity sha512-HcATiKmF0Tcg+8uNiMubsYG6Hy1nLZgGhorOd4pdIt49onetB3ovKRDEX3XNqR+W2i/zIIprQ/Rs04Z/FTfvcQ==
+"@eGroupTeam/material@^8.3.5":
+  version "8.3.5"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material/8.3.5/60b6bb4475d7f50cfe0ba95a9149f32e9d1d2d0b208e138b6d56b169e347483a#508b400cf116da9a6037e35b4083e504ec61e34d"
+  integrity sha512-VzjoK06YFk1RuUthKdJo0iVzrzH/vuGMF3595x2WbpJj+6lZDaWM78pEsWbd1HCOEDkBeDTcMOsSmJ/4g8o15w==
   dependencies:
-    "@eGroupTeam/hooks" "^8.1.0"
+    "@eGroupTeam/hooks" "^8.3.4"
     "@eGroupTeam/utils" "^8.1.0"
     "@types/warning" "^3.0.0"
     clsx "^1.1.1"
     warning "^4.0.3"
 
-"@eGroupTeam/redux-modules@^8.1.0":
-  version "8.1.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/redux-modules/8.1.0/a7d3ce06fc75a76bc653714748ec936634977e31b44c45d7a1e414bf2e1bf8d8#25f1e082147bfc2c2abd97bc57f90be67e2d4c88"
-  integrity sha512-EkmGrr9UOZ+roHc23D6OU5TnNVcrfPzJ4UyMp37u1zv3X1xU6vzU/UimyNBQVSzBY7jtW7NpErBCEUww2cW22A==
+"@eGroupTeam/redux-modules@^8.5.1":
+  version "8.5.1"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/redux-modules/8.5.1/112cbe2ed487e7a81d7b4a59cff0e3cdf955f22aa4e7e94e550a02de3f177951#8251bf064463f8a83552e8cbd62a313132e80fd7"
+  integrity sha512-s9dEaQ13p2rLyi+qYhor7GO3azIVN/PkrSPffnvTmTFhgbDYVYDkDMfg12IvnXV1t1AUngm7UsHWzvCEQfpKFw==
   dependencies:
     "@eGroupTeam/utils" "^8.1.0"
     "@types/lodash.assign" "^4.2.6"
@@ -509,7 +509,7 @@
     source-map "^0.5.7"
     stylis "4.0.13"
 
-"@emotion/cache@^11.6.0", "@emotion/cache@^11.7.1":
+"@emotion/cache@^11.7.1":
   version "11.7.1"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-11.7.1.tgz#08d080e396a42e0037848214e8aa7bf879065539"
   integrity sha512-r65Zy4Iljb8oyjtLeCuBH8Qjiy107dOYC6SJq7g7GV5UCQWMObY4SJDPGFjiiVpPrOJ2hmJOoBiYTC7hwx9E2A==
@@ -826,10 +826,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@mui/base@5.0.0-alpha.59":
-  version "5.0.0-alpha.59"
-  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.59.tgz#ca14f4597b30a342e5ec622a7164304478acd601"
-  integrity sha512-rPgN2FW0FAjQ9+LQ+XBsq3DFcuiiMFhf8uoLJAWnnzft27IJvJqbrhfpCZ68G6l+umJLbbl5RIIbpt8ALZDDNQ==
+"@mui/base@5.0.0-alpha.62":
+  version "5.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.62.tgz#d86ff07f33d7b49ebb545f29e184750c0270c3f8"
+  integrity sha512-ItmdSZwHKQbLbAsS3sWguR7OHqYqh2cYWahoVmHb13Kc6bMdmVUTY4x57IlDSU712B0yuA0Q/gPTq7xADKnFow==
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@emotion/is-prop-valid" "^1.1.1"
@@ -839,38 +839,25 @@
     prop-types "^15.7.2"
     react-is "^17.0.2"
 
-"@mui/base@5.0.0-alpha.60":
-  version "5.0.0-alpha.60"
-  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.60.tgz#48408a3f25ef92d861ea9617c5366cdd2b4a0bdd"
-  integrity sha512-J4cQoeqNFMaY6fgEJsT7meaLdYilA4R8wA53us3BT5NBP4puMeJLPK4rVSmpTsB8hf4Iyq+fosKzkcYRiKTctA==
-  dependencies:
-    "@babel/runtime" "^7.16.3"
-    "@emotion/is-prop-valid" "^1.1.1"
-    "@mui/utils" "^5.2.3"
-    "@popperjs/core" "^2.4.4"
-    clsx "^1.1.1"
-    prop-types "^15.7.2"
-    react-is "^17.0.2"
-
-"@mui/icons-material@^5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.2.4.tgz#a4ac1bc3dd028a21a60d6cdb64e0d3aab7226145"
-  integrity sha512-ekeOpSYFVYtNX2P+5oENXlCVQkT/Bm4XJBUTsdVYpqdoVBFSzygJMvNiq9HfAItSK3aBW7gMpypnDnN7CfjjOQ==
+"@mui/icons-material@^5.2.5":
+  version "5.2.5"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.2.5.tgz#c6575430b565c023232147934c45775630a53f02"
+  integrity sha512-uQiUz+l0xy+2jExyKyU19MkMAR2F7bQFcsQ5hdqAtsB14Jw2zlmIAD55mV6f0NxKCut7Rx6cA3ZpfzlzAfoK8Q==
   dependencies:
     "@babel/runtime" "^7.16.3"
 
-"@mui/lab@^5.0.0-alpha.59":
-  version "5.0.0-alpha.59"
-  resolved "https://registry.yarnpkg.com/@mui/lab/-/lab-5.0.0-alpha.59.tgz#a73550b980154c33bf81709fed3ce4030143a109"
-  integrity sha512-B+7EkbM+NRuUFFPzG2lqbyI73FM3W19RFkrWJdNZ+gd6C+NTdHdVS9UxSZm54PmSFEnd77wAWKdrIkhcFzEgZQ==
+"@mui/lab@^5.0.0-alpha.62":
+  version "5.0.0-alpha.62"
+  resolved "https://registry.yarnpkg.com/@mui/lab/-/lab-5.0.0-alpha.62.tgz#972f03b63f53e3d87a606f31a16b9b015d0b3146"
+  integrity sha512-oUxGhoaTvNFiXjV6xe3pGu+wvQsDC9R8Q6Os8xL4TUwihdaU/pIBRuUiANtJOZJPgJ1JyUpTwZZDTvOiCQFwZA==
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@date-io/date-fns" "^2.11.0"
     "@date-io/dayjs" "^2.11.0"
     "@date-io/luxon" "^2.11.1"
     "@date-io/moment" "^2.11.0"
-    "@mui/base" "5.0.0-alpha.59"
-    "@mui/system" "^5.2.3"
+    "@mui/base" "5.0.0-alpha.62"
+    "@mui/system" "^5.2.6"
     "@mui/utils" "^5.2.3"
     clsx "^1.1.1"
     prop-types "^15.7.2"
@@ -878,14 +865,14 @@
     react-transition-group "^4.4.2"
     rifm "^0.12.1"
 
-"@mui/material@^5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.2.4.tgz#e2c07a2d30c74a39300844efb177b0092f946609"
-  integrity sha512-W/0ib0aB5gKQ9DmEnYeKbmmzKBpn0039qDuQHjBE6RL5P1L5iYPGFMy4Es+7oQxiC77SuJ3xSOPsTpOW8QGDqw==
+"@mui/material@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.2.6.tgz#fda165759281fe7d6f0ec2744a255f283e17b7aa"
+  integrity sha512-yF2bRqyJMo6bYXT7TPA9IU/XLaXHi47Xvmj8duQa5ha3bCpFMXLfGoZcAUl6ZDjjGEz1nCFS+c1qx219xD/aeQ==
   dependencies:
     "@babel/runtime" "^7.16.3"
-    "@mui/base" "5.0.0-alpha.60"
-    "@mui/system" "^5.2.4"
+    "@mui/base" "5.0.0-alpha.62"
+    "@mui/system" "^5.2.6"
     "@mui/types" "^7.1.0"
     "@mui/utils" "^5.2.3"
     "@types/react-transition-group" "^4.4.4"
@@ -905,22 +892,13 @@
     "@mui/utils" "^5.2.3"
     prop-types "^15.7.2"
 
-"@mui/styled-engine@^5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.2.0.tgz#5c97e2b1b6c4c2d9991f07517ed862972d362b85"
-  integrity sha512-NZ4pWYQcM5wreUfiXRd7IMFRF+Nq1vMzsIdXtXNjgctJTKHunrofasoBqv+cqevO+hqT75ezSbNHyaXzOXp6Mg==
+"@mui/styled-engine@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.2.6.tgz#eac4a98b05b17190c2155b31b0e36338b3fb09f2"
+  integrity sha512-bqAhli8eGS6v2qxivy2/4K0Ag8o//jsu1G2G6QcieFiT6y7oIF/nd/6Tvw6OSm3roOTifVQWNKwkt1yFWhGS+w==
   dependencies:
     "@babel/runtime" "^7.16.3"
-    "@emotion/cache" "^11.6.0"
-    prop-types "^15.7.2"
-
-"@mui/styled-engine@^5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@mui/styled-engine/-/styled-engine-5.2.4.tgz#a6543a47a69c26d90dee8d661660ee7b8af23d3c"
-  integrity sha512-tlilkVsAR+MeWIPILzj1uGjiy5tKONZgblXY49LECUNF7u7aTDszqmv0hRG+1IAZjNts+ox8XAlldPNfj+OKvA==
-  dependencies:
-    "@babel/runtime" "^7.16.3"
-    "@emotion/cache" "^11.6.0"
+    "@emotion/cache" "^11.7.1"
     prop-types "^15.7.2"
 
 "@mui/styles@^5.2.3":
@@ -946,28 +924,14 @@
     jss-plugin-vendor-prefixer "^10.8.2"
     prop-types "^15.7.2"
 
-"@mui/system@^5.2.3":
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.2.3.tgz#70584e6d5cf2b02963a6d0d90d64f7a9ad614803"
-  integrity sha512-YvkjmqgOruZgr+IkueRns99gl3MmnNs8BhnlZosYMLzKz/1lY0JqVBFqUh4sGVbD0UEKFwdk8H31itG5OIPChA==
+"@mui/system@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.2.6.tgz#153b534223caae254a98162eef06d6ab48ecff34"
+  integrity sha512-PZ7bmpWOLikWgqn2zWv9/Xa7lxnRBOmfjoMH7c/IVYJs78W3971brXJ3xV9MEWWQcoqiYQeXzUJaNf4rFbKCBA==
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@mui/private-theming" "^5.2.3"
-    "@mui/styled-engine" "^5.2.0"
-    "@mui/types" "^7.1.0"
-    "@mui/utils" "^5.2.3"
-    clsx "^1.1.1"
-    csstype "^3.0.10"
-    prop-types "^15.7.2"
-
-"@mui/system@^5.2.4":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.2.4.tgz#2bb30f1c5e39088959af562a18ce9c5313d87d83"
-  integrity sha512-08WrDLzmY0/ag5wSzT0Qf2DkuPHdqkWbDUOIVs0VIkaq8tRH+EtnnLxuqyf8WLcytJZIcKcoLQDLWqbFivZ9lA==
-  dependencies:
-    "@babel/runtime" "^7.16.3"
-    "@mui/private-theming" "^5.2.3"
-    "@mui/styled-engine" "^5.2.4"
+    "@mui/styled-engine" "^5.2.6"
     "@mui/types" "^7.1.0"
     "@mui/utils" "^5.2.3"
     clsx "^1.1.1"
@@ -1108,10 +1072,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.0.tgz#6734f8ebc106a0860dff7f92bf90df193f0935d7"
   integrity sha512-zrsUxjLOKAzdewIDRWy9nsV1GQsKBCWaGwsZQlCgr6/q+vjyZhFgqedLfFBuI9anTPEUT4APq9Mu0SZBTzIcGQ==
 
-"@reduxjs/toolkit@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.7.0.tgz#fe00b8869bc076cf92efc00417832822d1e5c367"
-  integrity sha512-iApo4zS+8kWnIn4xucTDWpqRjDNkXruFIyJQWwThIEIbMj5kwqvbMaQcEgd2a305B68Z+4bvZqAqJSATeddaJA==
+"@reduxjs/toolkit@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.7.1.tgz#994962aeb7df3c77be343dd2ad1aa48221dbaa0c"
+  integrity sha512-wXwXYjBVz/ItxB7SMzEAMmEE/FBiY1ze18N+VVVX7NtVbRUrdOGKhpQMHivIJfkbJvSdLUU923a/yAagJQzY0Q==
   dependencies:
     immer "^9.0.7"
     redux "^4.1.2"
@@ -1385,10 +1349,19 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.2":
+"@types/react@*":
   version "17.0.37"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.37.tgz#6884d0aa402605935c397ae689deed115caad959"
   integrity sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17.0.38":
+  version "17.0.38"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.38.tgz#f24249fefd89357d5fa71f739a686b8d7c7202bd"
+  integrity sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2812,10 +2785,15 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-date-fns@^2.22.1, date-fns@^2.27.0:
+date-fns@^2.22.1:
   version "2.27.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.27.0.tgz#e1ff3c3ddbbab8a2eaadbb6106be2929a5a2d92b"
   integrity sha512-sj+J0Mo2p2X1e306MHq282WS4/A8Pz/95GIFcsPNMPMZVI3EUrAdSv90al1k+p74WGLCruMXk23bfEDZa71X9Q==
+
+date-fns@^2.28.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 debug@2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
@@ -6740,10 +6718,10 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-hook-form@^7.22.1:
-  version "7.22.1"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.22.1.tgz#604cfb2572ed2fcbc7426982a320056cdc23cf18"
-  integrity sha512-c1jMj8k0AyvLhqU08B85HZGU2n1RknmyOEDcbROWaraW8kT4ga7kCsi/4XH6A7KCDzAM0sWoa30DVyqkIsJl9Q==
+react-hook-form@^7.22.5:
+  version "7.22.5"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.22.5.tgz#85a135f3c5ae02ccf73096a03fc14b45607e9baa"
+  integrity sha512-Q2zaeQFXdVQ8l3hcywhltH+Nzj4vo50wMVujHDVN/1Xy9IOaSZJwYBXA2CYTpK6rq41fnXviw3jTLb04c7Gu9Q==
 
 react-is@17.0.2, "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1, react-is@^17.0.2:
   version "17.0.2"
@@ -7723,10 +7701,10 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-swr@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/swr/-/swr-1.1.1.tgz#f13346cc830d7950183af57b341bfabb4cc90d43"
-  integrity sha512-ZpUHyU3N3snj2QGFeE2Fd3BXl1CVS6YQIQGb1ttPAkTmvwZqDyV3GRMNPsaeAYCBM74tfn4XbKx28FVQR0mS7Q==
+swr@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-1.1.2.tgz#9f3de2541931fccf03c48f322f1fc935a7551612"
+  integrity sha512-UsM0eo5T+kRPyWFZtWRx2XR5qzohs/LS4lDC0GCyLpCYFmsfTk28UCVDbOE9+KtoXY4FnwHYiF+ZYEU3hnJ1lQ==
 
 symbol-tree@^3.2.4:
   version "3.2.4"

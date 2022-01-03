@@ -36,7 +36,7 @@ const PrivateLayout = function PrivateLayout({
       <header>
         <nav>
           <NextLink href="/">
-            <Link cursor="pointer">Go home</Link>
+            <Link sx={{ cursor: "pointer" }}>Go home</Link>
           </NextLink>{" "}
           | <NextLink href="/me">Private Home</NextLink> |{" "}
           <NextLink href="/me/dashboard">Private Dashboard</NextLink>
