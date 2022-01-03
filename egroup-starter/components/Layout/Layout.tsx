@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import NextLink from "next/link";
 import Head from "next/head";
 import Link from "@eGroupTeam/material/Link";
+import Button from "@eGroupTeam/material/Button";
 import { useCookies } from "react-cookie";
 import { useRouter } from "next/router";
 
@@ -14,13 +15,17 @@ const Layout = function Layout({
   children,
   title = "This is the default title",
 }: Props) {
+  const [, setCookie, removeCookie] = useCookies();
   const router = useRouter();
-  const [, setCookie] = useCookies();
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleLogin = () => {
     setCookie("hasLoginCookie", "true");
-    router.push("/me");
+    alert("Login !");
+  };
+
+  const handleLogout = () => {
+    removeCookie("hasLoginCookie");
+    router.reload();
   };
 
   return (
@@ -34,9 +39,9 @@ const Layout = function Layout({
             <Link cursor="pointer">Home</Link>
           </NextLink>{" "}
           |{" "}
-          <Link cursor="pointer" onClick={handleClick}>
-            Private Pages
-          </Link>{" "}
+          <NextLink href="/me">
+            <Link cursor="pointer">Private Pages</Link>
+          </NextLink>{" "}
           |{" "}
           <NextLink href="/posts">
             <Link cursor="pointer">Post List</Link>
@@ -51,6 +56,26 @@ const Layout = function Layout({
           </NextLink>
         </nav>
       </header>
+      <div>
+        <Button
+          onClick={handleLogout}
+          variant="contained"
+          color="secondary"
+          size="small"
+          disableElevation
+        >
+          Logout
+        </Button>
+        <Button
+          onClick={handleLogin}
+          variant="contained"
+          color="primary"
+          size="small"
+          disableElevation
+        >
+          Login
+        </Button>
+      </div>
       {children}
       <footer>
         <hr />
