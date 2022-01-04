@@ -25,6 +25,7 @@ module.exports = {
     "no-restricted-exports": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "func-names": "off"
   },
