@@ -1,10 +1,15 @@
 import React, { ReactNode } from "react";
+
+import { useDispatch } from "react-redux";
+import { useCookies } from "react-cookie";
+import { useRouter } from "next/router";
+
 import Head from "next/head";
 import NextLink from "next/link";
 import Link from "@eGroupTeam/material/Link";
 import Button from "@eGroupTeam/material/Button";
-import { useCookies } from "react-cookie";
-import { useRouter } from "next/router";
+
+import { logout } from "./actions";
 
 type Props = {
   children?: ReactNode;
@@ -15,6 +20,7 @@ const PrivateLayout = function PrivateLayout({
   children,
   title = "This is the default title",
 }: Props) {
+  const dispatch = useDispatch();
   const [, setCookie, removeCookie] = useCookies();
   const router = useRouter();
 
@@ -26,6 +32,7 @@ const PrivateLayout = function PrivateLayout({
   const handleLogout = () => {
     removeCookie("hasLoginCookie");
     router.reload();
+    dispatch(logout());
   };
 
   return (

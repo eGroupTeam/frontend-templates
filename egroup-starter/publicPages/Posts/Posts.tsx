@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import NextLink from "next/link";
 import Link from "@eGroupTeam/material/Link";
 
-import { Post } from "interfaces";
+import { Post } from "interfaces/entities";
 import Layout from "components/Layout";
 import { List, ListItem, ListItemText } from "@eGroupTeam/material";
 import { fetcher } from "@eGroupTeam/hooks/fetchers";

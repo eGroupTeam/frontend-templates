@@ -1,10 +1,10 @@
 import { createSelector } from "@reduxjs/toolkit";
-import { RootState } from "redux/configureAppStore";
+import { RootState } from "interfaces/utils";
 
 /**
  * API States
  */
-const getUiStates = (state: RootState) => state.publicPages.Basic;
+const getUiStates = (state: RootState) => state.publicPages.basic;
 
 export const getCounts = createSelector(
   getUiStates,

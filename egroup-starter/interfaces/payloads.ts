@@ -1,5 +1,5 @@
 import { Outcome } from "@eGroupTeam/utils/getDeviceInfo";
-import { RootState } from "redux/configureAppStore";
+import { RootState } from "./utils";
 
 export type LogPayload = {
   function: string;
