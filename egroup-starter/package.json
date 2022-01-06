@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "dev:https": "local-ssl-proxy --key ./certificate/privateKey.key --cert ./certificate/certificate.crt --source 4000 --target 3000",
+    "https": "local-ssl-proxy --key ./certificate/privateKey.key --cert ./certificate/certificate.crt --source 3000 --target 4000",
+    "dev:https": "concurrently --kill-others \"PORT=4000 yarn dev\" \"yarn https\"",
     "build": "next build && next-sitemap",
     "start": "next start",
     "test": "jest",
@@ -51,6 +52,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "concurrently": "^7.0.0",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-airbnb-typescript": "^16.1.0",
