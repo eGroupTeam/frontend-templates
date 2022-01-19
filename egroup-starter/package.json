@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "https": "local-ssl-proxy --key ./certificate/privateKey.key --cert ./certificate/certificate.crt --source 3000 --target 4000",
+    "https": "local-ssl-proxy --source 3000 --target 4000",
     "dev:https": "concurrently --kill-others \"PORT=4000 yarn dev\" \"yarn https\"",
     "build": "next build && next-sitemap",
     "start": "next start",

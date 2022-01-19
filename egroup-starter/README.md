@@ -20,22 +20,7 @@ For more information, please refer to:
 
 ## Https develop server
 
-If need https develop server please create self signed certificate.
-
-Use openssl
-
 ```sh
-mkdir certificate && cd certificate
-openssl req -x509 -out certificate.crt -keyout privateKey.key \
-  -newkey rsa:2048 -nodes -sha256 \
-  -subj '/CN=localhost' -extensions EXT -config <( \
-   printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
-```
-
-And run both.
-
-```sh
-yarn dev
 yarn dev:https
 ```
 
