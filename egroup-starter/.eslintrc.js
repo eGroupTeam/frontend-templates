@@ -5,6 +5,7 @@ module.exports = {
   },
   parser: "@typescript-eslint/parser",
   extends: [
+    "plugin:@next/next/recommended",
     "airbnb",
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
