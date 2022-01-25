@@ -1,5 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production'
-const proxyPort = process.env.PROXY_PORT
+const proxyUrl = process.env.PROXY_URL
+const s3TestDomain = process.env.S3_TEST_DOMAIN
 const cdnDomain = process.env.CDN_DOMAIN
 const cdnUrl = process.env.CDN_URL
 
@@ -13,7 +14,7 @@ const common = {
     defaultLocale: "en",
   },
   images: {
-    domains: [cdnDomain]
+    domains: [s3TestDomain, cdnDomain]
   },
   webpack: (config) => {
     // import markdown files
@@ -35,7 +36,7 @@ const dev = {
     return [
       {
         source: '/api/:path*',
-        destination: `http://localhost:${proxyPort}/api/:path*` // Proxy to Backend
+        destination: `${proxyUrl}/api/:path*` // Proxy to Backend
       }
     ]
   },
