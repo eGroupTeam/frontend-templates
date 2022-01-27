@@ -375,10 +375,10 @@
   dependencies:
     "@date-io/core" "^2.11.0"
 
-"@eGroupTeam/devops@^8.0.0":
-  version "8.0.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/devops/8.0.0/3bd381a081eb7a695c34c3ae097f8abda188b796fc1f33c667203c3053b8b188#fcd95674be2b6c4f7866c1bff92c4173b5471ba7"
-  integrity sha512-J+J8YJsMuMWeqFi0EDmfGA7xIjfCBwuG+pEUTEMxPMFeTeEjp/LYWyuYzxN04tNXrPj35DNQQuUPPypr2pxlvw==
+"@eGroupTeam/devops@^8.9.0":
+  version "8.9.0"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/devops/8.9.0/9befad976ed012c979c129430087e894a4bb7209638a8834f4631fdfef15f821#5ac2e9daa4d0ff3489b8547cb49b32f81ee0b9da"
+  integrity sha512-Szl0MCmsIP4/vxbey5bVx5ku0f6hGlJKiR9bl5yjSp4CVYeD5RxOr+jiSxO8Uj3I6ql48YDBil0jbs8NDvWLPg==
   dependencies:
     gulp "^4.0.0"
     gulp-bom "^2.0.0"
@@ -387,88 +387,93 @@
     gulp-rename "^1.4.0"
     path "^0.12.7"
 
-"@eGroupTeam/hooks@^8.3.4":
-  version "8.3.4"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/hooks/8.3.4/2ccf3c6ce045b3f4dafc7c0e80c1dfc28ce7681ecd3ff6ce6b05b300fb393546#80ae381cd4ac42ac10f10418faba25afcd3172d6"
-  integrity sha512-WCHtS8UILMa3lxjHCLauvaLbsB6gNvmo0w8AQsOm8eFW2nniHVLaDX1uG2LNVCPRiYuoM+n1ljgz/uwgd/efcg==
+"@eGroupTeam/hooks@^8.13.1":
+  version "8.13.1"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/hooks/8.13.1/9b13e95518cda2ce4e7e7097662aaf40fb226708d24c941195fe63c5a432095c#630824eab5875add1e1abfd4d8b2e5af799ae134"
+  integrity sha512-RJ9K80DenUjdnMtzK+Gt9aOr8ah/EA5tqb65qf5BmnBoFLFP2KmMNjP/ySKlisQ8AD2PmOuhHTRpN0boHLI4zA==
   dependencies:
-    "@eGroupTeam/utils" "^8.1.0"
+    "@eGroupTeam/redux-modules" "^8.13.1"
+    "@eGroupTeam/typings" "^8.13.1"
+    "@eGroupTeam/utils" "^8.11.7"
     dequal "^2.0.2"
-    query-string "^7.0.1"
+    query-string "^7.1.0"
 
-"@eGroupTeam/material-icons@^8.0.0":
-  version "8.0.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-icons/8.0.0/d23ceeab62cc6584591e328d7255a2480ad50ccfdeb58e30c17f6f52e8e38bf1#6cf529e7784b3c27d91b307f8fe80211c5a35088"
-  integrity sha512-+o51ehonvdoCkUm5lSXkGpr1vXEhl3khmKbvPALYQLj6KPlcJQJK7vxcy/DqDmO++oyTKJ+TXXhNDedxYs2v7A==
+"@eGroupTeam/material-icons@^8.9.0":
+  version "8.9.0"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-icons/8.9.0/045a050f6b748b8e65c012b03f76101f3a54dad07a2737726de0528921c2a529#a5de52cbeb4aef86235460bc7d8ed100d1895328"
+  integrity sha512-tPtYINA0f+H/Ey8hgQw3PjvsE5e7r/iX6W+wBB4iznbYG+4YaNKnaBsg0WqCLIPipArP4G7DqxCOaiYbkSxO8g==
   dependencies:
     clsx "^1.1.1"
 
-"@eGroupTeam/material-intl@^8.0.0":
-  version "8.0.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-intl/8.0.0/759fb1d5dc940fc5c678e922e618734856c8fd8ca3e0a00a19e1ebea82cda67f#7494e0e9a9cdbdbe6b00853c7d4398ee634ba834"
-  integrity sha512-GSS7w50rffifgRrXpFikYq9lxsvcHzyR74/isl3EAZAewP98kDCUlVFlRlEp8wKqOlGD3JkAstg0FxNUrbx5LA==
+"@eGroupTeam/material-intl@^8.10.7":
+  version "8.10.7"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-intl/8.10.7/d6592249a520eb32b7c28dcfe97dccaeef22564c9f8596ce6a3e3c680e77dc68#a68f4e1fbdb338960a88ae02246261870696219d"
+  integrity sha512-diIvOyax5skuGEcgUNgaMc4G4X1AbUoTjNJteIG3GVTjDRdlpXZdRrSo8jck5lPl/4saljl+TsTPhLNV+3yvCw==
 
-"@eGroupTeam/material-lab@^8.5.7":
-  version "8.5.7"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-lab/8.5.7/fcc56e154d23048006a4664631db3793644fbbf77539050c789838cfc644d83a#3950f5cb51c15cf010bbddcd00ef5ffc08aab7e6"
-  integrity sha512-C4NSNyZtP2UykpKAeMkcS5pfmr890iPN8s1e5C4sjx0epts0qpi5K4YX5MxrPgV0t2XQW/X1LaxKweznlxpBJg==
+"@eGroupTeam/material-lab@^8.13.2":
+  version "8.13.2"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-lab/8.13.2/04d0a3392fd400483244852cfd09351056705fda5a547cc372a5f1189406e529#3688bb1e5d4455db021df571b81e22235ff28c3e"
+  integrity sha512-WR2qgGb358EPVdwSk26+hptTiltHCn7XCj2DYfe9QvpsmBy46ElmnIu/z20I5Y6YgukwPeNm4hUv8N/k1NXYHQ==
   dependencies:
-    "@eGroupTeam/hooks" "^8.3.4"
-    "@eGroupTeam/material" "^8.5.7"
-    "@eGroupTeam/utils" "^8.1.0"
+    "@eGroupTeam/hooks" "^8.13.1"
+    "@eGroupTeam/material" "^8.13.2"
+    "@eGroupTeam/typings" "^8.13.1"
+    "@eGroupTeam/utils" "^8.11.7"
     clsx "^1.1.1"
     date-fns "^2.22.1"
     warning "^4.0.3"
 
-"@eGroupTeam/material-layout@^8.5.7":
-  version "8.5.7"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-layout/8.5.7/8a4e89a46f1a63a65078389423d6b1ae95cace0fc4d9133712417dd03a62ffc1#58674b2a29358abc441a9eb892ba38a890eaa0b7"
-  integrity sha512-pSslHCcU76DP/TtTNVF63qwaFSzjEjSh6WZLP3v+xBqbOdJ5kkI6j1BKZdJe8BcsclovTRaMgCtN1TbpNfoOLw==
+"@eGroupTeam/material-layout@^8.13.2":
+  version "8.13.2"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-layout/8.13.2/30596a27b71641a97c883decc4d228c6289667201c99003e6051a82c20e5de69#5289722bea40265caf0a2f14cc00842bebd5db0e"
+  integrity sha512-QE0vuwMX7e6qf0lwFjJORWh2N1HDvehSGtUdiKpjjhu6YtsUs/LNC4HhzFkebaZPjOW807KI8BPFWbsIIGu6gg==
   dependencies:
-    "@eGroupTeam/material" "^8.5.7"
+    "@eGroupTeam/material" "^8.13.2"
     clsx "^1.1.1"
 
-"@eGroupTeam/material-module@^8.5.10":
-  version "8.5.10"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-module/8.5.10/105b4a509db543a404999bd7a2d75032678f701c8924a973c91c6c9672c74bf3#933999cebafdbdfc11404f6b6f2ee1e8a11a5041"
-  integrity sha512-svG4QeDahSoawJYX5c+QjPAIOTcUxggvpmWIlXUQNDm8bPBkfJdkbnneyV/XDVovtypBumtt+BNVfB5lt+Ex3Q==
+"@eGroupTeam/material-module@^8.13.2":
+  version "8.13.2"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-module/8.13.2/8ccd3fa099254c2061eb5cdbc410bbe5b8c02ebbf18787d0140d2d55856a8e0e#b5fd26469a98c0573bcc380229a90686da9eaba0"
+  integrity sha512-+Hs4ic5Yt0Li9mr+5fe4+yYn6MJqxgy4On6hJBPBm4ZBshCK1onfpBJy8USg+BLQJwYAS8lxJ1XWAfey/AqUkQ==
   dependencies:
-    "@eGroupTeam/hooks" "^8.3.4"
-    "@eGroupTeam/material" "^8.5.7"
-    "@eGroupTeam/material-lab" "^8.5.7"
-    "@eGroupTeam/material-router" "^8.0.0"
-    "@eGroupTeam/utils" "^8.1.0"
+    "@eGroupTeam/hooks" "^8.13.1"
+    "@eGroupTeam/material" "^8.13.2"
+    "@eGroupTeam/material-lab" "^8.13.2"
+    "@eGroupTeam/material-router" "^8.9.0"
+    "@eGroupTeam/typings" "^8.13.1"
+    "@eGroupTeam/utils" "^8.11.7"
     "@types/uuid" "^8.3.1"
     "@types/validator" "^13.6.3"
     "@types/warning" "^3.0.0"
     clsx "^1.1.1"
-    query-string "^7.0.1"
+    query-string "^7.1.0"
     uuid "^8.3.2"
     validator "^13.6.0"
     warning "^4.0.3"
 
-"@eGroupTeam/material-router@^8.0.0":
-  version "8.0.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-router/8.0.0/2191607065128ba36c968bf48783af667f04e4cfce2ae2cb6eef089e5fa0ba52#b1d7c0f6bc28ab024ae2af45d98bb221513766e2"
-  integrity sha512-xWwD9wvt5EJik6beIuNXdxlwucb2YuWcI2tywqidn1Gb+hkHgqIYb1J4PPJFybNtHQt06ASjVw0zNvC3a4GlWA==
+"@eGroupTeam/material-router@^8.9.0":
+  version "8.9.0"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material-router/8.9.0/16adbc3c66551fad25c447fc511397ed5efdd5c54a53b7391e603745e1533fd2#a43a2c957e2057cb0d0492205ed7d7b8f2dd02e8"
+  integrity sha512-T8CbiFd63Zy2G8bYTwm1zTNG58fzNCQgmCmrgr796y/Wtlwa24G8RZrkQ0+YHNi5h0Wn/cCGvZNFBGPLvHhPqg==
 
-"@eGroupTeam/material@^8.5.7":
-  version "8.5.7"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material/8.5.7/ae7edcd2fef56116e6b5aa22076b972b25b8cc4f1e5edea2bb601660b34608a4#edcfec4cb68e5573d2e55535d6e9757aa856987c"
-  integrity sha512-z43YgE1XU5HqDNzA8qfqyB/FGINTqnRefHKWL/mXkakubQABEIVypK+9KkofKhau8HGl7JCsnYwQ9fYFHzTd9w==
+"@eGroupTeam/material@^8.13.2":
+  version "8.13.2"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/material/8.13.2/720ae7994fa5f321132e0c167bb07a7ee20490650e6355b6ddbda2fffcc889d1#5a5a47fd057fca9fee59ec5a815d1e3e3107d609"
+  integrity sha512-rpq7OVYKDyRhJ8XatEU+mgIa72ML9KSEcDn0afjjpgiA133rX8hEwvWGjlxTyuy3CPCd0TqdP1iJ2siKqDw4eA==
   dependencies:
-    "@eGroupTeam/hooks" "^8.3.4"
-    "@eGroupTeam/utils" "^8.1.0"
+    "@eGroupTeam/hooks" "^8.13.1"
+    "@eGroupTeam/utils" "^8.11.7"
     "@types/warning" "^3.0.0"
     clsx "^1.1.1"
     warning "^4.0.3"
 
-"@eGroupTeam/redux-modules@^8.6.1":
-  version "8.6.1"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/redux-modules/8.6.1/8c5e5f8715928f187dc3757a9ae64a1f81ba70972bfffb4d29b45ef91880009b#ce2bf45046ebac1f5330d47dc0c0a12703f6ec2b"
-  integrity sha512-pBSvYLFKBTHDxa540AvTryyY46t2MinrEnABs05lbm3qDesOgCR5yiX+tqyJ5F23VuCvBOt4Cobxeek6+ONSbg==
+"@eGroupTeam/redux-modules@^8.13.1":
+  version "8.13.1"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/redux-modules/8.13.1/0c52a7a7526c1da4a6e28a72f76c79b5ad2e5706922555a54cb71d49766198d2#cac0169b9483c6a92169d6ae5a5a1a6ec0f29b97"
+  integrity sha512-E0MW753eYh4GQctsRix6+FD/MTJqEEMZdubNiciHuu8P5QB6xSF3E6N3L5lhdrrh0dsY6XvHcQF/92gyscNj0w==
   dependencies:
-    "@eGroupTeam/utils" "^8.1.0"
+    "@eGroupTeam/typings" "^8.13.1"
+    "@eGroupTeam/utils" "^8.11.7"
     "@types/lodash.assign" "^4.2.6"
     "@types/lodash.merge" "^4.6.6"
     "@types/lodash.mergewith" "^4.6.6"
@@ -480,10 +485,15 @@
     lodash.mergewith "^4.6.2"
     warning "^4.0.3"
 
-"@eGroupTeam/utils@^8.1.0":
-  version "8.1.0"
-  resolved "https://npm.pkg.github.com/download/@eGroupTeam/utils/8.1.0/d827fc61fd0b6b973d9591e794f4cfb5d8dc0832fb873e29f8c8a1c7895e6c8e#88a987169fe1e588414756e78df8d6059cac82fe"
-  integrity sha512-b59wgHcNDQM7v2bhtohmRR/bQveo8eBK0Y5KT6YyIHyVfPpoxsymD8EQ2htydXVy8tkxBSr+mlIhipY5uFilkw==
+"@eGroupTeam/typings@^8.13.1":
+  version "8.13.1"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/typings/8.13.1/6148d276dab36805301ca4ead25ecfa5b075acfce63cd53f1f183f57f546e82f#850634d427341ddcdb5ed24dc939a7449a56e7ac"
+  integrity sha512-TjXnkNWQWwAhSxBwD1JPvRDg2xgjkvL63d+j1wPfnWpJfl5DL3NV4irtDCzPbUy3pgSX7VSpiMsBkb1uc/jgaA==
+
+"@eGroupTeam/utils@^8.11.7":
+  version "8.11.7"
+  resolved "https://npm.pkg.github.com/download/@eGroupTeam/utils/8.11.7/4ec6b91ed18c97818aec5403fc6adabcdfd45315a735309a9203863f663e8854#80489506ced539b9a7196bc2b3a45b4fffe0cffd"
+  integrity sha512-qZ9/MIKWtLI/BYyLP9OwUUF3ZnVeypkulbG5lQTRtPeT4HO3c5eHh2bD5r8ykwK3NSrcobyCEzkXjMOWDp0BFw==
   dependencies:
     "@types/lodash.clonedeep" "^4.5.6"
     "@types/lodash.merge" "^4.6.6"
@@ -6677,6 +6687,16 @@ query-string@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.0.1.tgz#45bd149cf586aaa582dffc7ec7a8ad97dd02f75d"
   integrity sha512-uIw3iRvHnk9to1blJCG3BTc+Ro56CBowJXKmNNAm3RulvPBzWLRqKSiiDk+IplJhsydwtuNMHi8UGQFcCLVfkA==
+  dependencies:
+    decode-uri-component "^0.2.0"
+    filter-obj "^1.1.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
+query-string@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.0.tgz#96b88f27b39794f97b8c8ccd060bc900495078ef"
+  integrity sha512-wnJ8covk+S9isYR5JIXPt93kFUmI2fQ4R/8130fuq+qwLiGVTurg7Klodgfw4NSz/oe7xnyi09y3lSrogUeM3g==
   dependencies:
     decode-uri-component "^0.2.0"
     filter-obj "^1.1.0"
