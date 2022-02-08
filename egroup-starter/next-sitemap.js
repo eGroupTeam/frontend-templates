@@ -1,55 +1,37 @@
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+
 function getPriority(path, defaultValue) {
   switch (path) {
     case "/":
       return 1;
-    case "/face-recognition":
-      return 0.9;
-    case "/face-pc-sdk":
-      return 0.89;
-    case "/face-iot-full-sdk":
-      return 0.88;
-    case "/face-iot-lite-sdk":
-      return 0.87;
-    case "/solutions":
-      return 0.86;
-    case "/shop":
-      return 0.85;
     default:
       return defaultValue;
   }
 }
 
 module.exports = {
-  siteUrl: "https://www.egroupai.com",
+  siteUrl,
   generateRobotsTxt: true,
   exclude: [
-    "/pay-failed",
-    "/pay-complete",
-    "/org",
-    "/org/engines",
-    "/org/licenses",
-    "/org/orders",
-    "/login",
-    "/checkout",
     "/404",
   ],
   alternateRefs: [
     {
-      href: 'https://www.egroupai.com/zh-tw',
-      hreflang: 'zh-tw',
+      href: `${siteUrl}/zh-TW`,
+      hreflang: 'zh-TW',
     },
     {
-      href: 'https://www.egroupai.com/en',
-      hreflang: 'en',
+      href: `${siteUrl}/en-US`,
+      hreflang: 'en-US',
     },
   ],
   transform: async (config, path) => {
     let loc = path
-    if (loc.includes("/zh-tw")) {
+    if (loc.includes("/zh-TW")) {
       return null
     }
-    if (loc.includes("/en")) {
-      loc = loc.replace("/en", "");
+    if (loc.includes("/en-US")) {
+      loc = loc.replace("/en-US", "");
     }
     return {
       loc,

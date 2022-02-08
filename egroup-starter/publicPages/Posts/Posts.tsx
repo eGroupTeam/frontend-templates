@@ -6,7 +6,7 @@ import Link from "@eGroupTeam/material/Link";
 import { Post } from "interfaces/entities";
 import Layout from "components/Layout";
 import { List, ListItem, ListItemText } from "@eGroupTeam/material";
-import { fetcher } from "@eGroupTeam/hooks/fetchers";
+import { fetcher } from "@eGroupTeam/hooks/apis/fetchers";
 
 type Props = {
   posts: Post[];

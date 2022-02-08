@@ -8,10 +8,10 @@ const common = {
   i18n: {
     // These are all the locales you want to support in
     // your application
-    locales: ["en", "zh-tw"],
+    locales: ["en-US", "zh-TW"],
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
-    defaultLocale: "en",
+    defaultLocale: "en-US",
   },
   images: {
     domains: [...s3TestDomain, ...cdnDomain]

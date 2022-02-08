@@ -1,4 +1,4 @@
-import { fetcher } from "@eGroupTeam/hooks/fetchers";
+import { fetcher } from "@eGroupTeam/hooks/apis/fetchers";
 import { LogPayload } from "interfaces/payloads";
 
 const tools = {
