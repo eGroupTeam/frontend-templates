@@ -28,6 +28,7 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "@typescript-eslint/array-type": ["error", { "default": "array" }],
     "func-names": "off"
   },
 };
