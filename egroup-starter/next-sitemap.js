@@ -14,6 +14,7 @@ module.exports = {
   generateRobotsTxt: true,
   exclude: [
     "/404",
+    "/500",
   ],
   alternateRefs: [
     {
@@ -25,6 +26,11 @@ module.exports = {
       hreflang: 'en-US',
     },
   ],
+  robotsTxtOptions: {
+    policies: [
+      { userAgent: '*', disallow: ['/404', '/500'] },
+    ],
+  },
   transform: async (config, path) => {
     let loc = path
     if (loc.includes("/zh-TW")) {
