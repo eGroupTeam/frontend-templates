@@ -39,6 +39,7 @@ certificate
 # next-sitemap auto generate
 robots.txt
 sitemap.xml
+sitemap-*.xml
 
 # type check
 tsconfig.tsbuildinfo
