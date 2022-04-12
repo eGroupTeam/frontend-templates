@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import type { NextFetchEvent, NextRequest } from "next/server";
+import type { NextRequest } from "next/server";
 
-export function middleware(req: NextRequest, ev: NextFetchEvent) {
+export function middleware(req: NextRequest) {
   const hasLogin = req.cookies.hasLoginCookie;
   if (hasLogin) {
     return NextResponse.next();
