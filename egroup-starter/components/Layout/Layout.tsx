@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 import NextLink from "next/link";
 import Head from "next/head";
 import Link from "@eGroupTeam/material/Link";
@@ -6,15 +6,13 @@ import Button from "@eGroupTeam/material/Button";
 import { useCookies } from "react-cookie";
 import { useRouter } from "next/router";
 
-type Props = {
+type LayoutProps = {
   children?: ReactNode;
   title?: string;
 };
 
-const Layout = function Layout({
-  children,
-  title = "This is the default title",
-}: Props) {
+const Layout: FC<LayoutProps> = function Layout(props) {
+  const { children, title = "This is the default title" } = props;
   const [, setCookie, removeCookie] = useCookies();
   const router = useRouter();
 

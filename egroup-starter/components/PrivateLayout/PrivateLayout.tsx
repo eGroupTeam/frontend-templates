@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 
 import { useDispatch } from "react-redux";
 import { useCookies } from "react-cookie";
@@ -11,15 +11,13 @@ import Button from "@eGroupTeam/material/Button";
 
 import { logout } from "./actions";
 
-type Props = {
+type PrivateLayoutProps = {
   children?: ReactNode;
   title?: string;
 };
 
-const PrivateLayout = function PrivateLayout({
-  children,
-  title = "This is the default title",
-}: Props) {
+const PrivateLayout: FC<PrivateLayoutProps> = function PrivateLayout(props) {
+  const { children, title = "This is the default title" } = props;
   const dispatch = useDispatch();
   const [, setCookie, removeCookie] = useCookies();
   const router = useRouter();

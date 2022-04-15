@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { GetStaticProps } from "next";
 import NextLink from "next/link";
 import Link from "@eGroupTeam/material/Link";
@@ -8,11 +8,11 @@ import Layout from "components/Layout";
 import { List, ListItem, ListItemText } from "@eGroupTeam/material";
 import { fetcher } from "@eGroupTeam/hooks/apis/fetchers";
 
-type Props = {
+type PostsProps = {
   posts: Post[];
 };
 
-const WithStaticProps = function WithStaticProps({ posts }: Props) {
+const Posts: FC<PostsProps> = function Posts({ posts }: PostsProps) {
   return (
     <Layout title="Post List | Next.js + TypeScript Example">
       <h1>Post List</h1>
@@ -46,4 +46,4 @@ export const getStaticProps: GetStaticProps = async () => {
   return { props: { posts } };
 };
 
-export default WithStaticProps;
+export default Posts;
