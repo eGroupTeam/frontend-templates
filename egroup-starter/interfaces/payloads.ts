@@ -1,6 +1,10 @@
+/**
+ * Api Payload interfaces
+ */
+
 import { Outcome } from "@eGroupTeam/utils/getDeviceInfo";
 
-export type LogApiPayload = {
+export interface LogApiPayload {
   function: string;
   browserDescription: string;
   jsonData: {
@@ -11,4 +15,4 @@ export type LogApiPayload = {
   };
   level: "ERROR" | "INFO";
   message?: string;
-};
+}
