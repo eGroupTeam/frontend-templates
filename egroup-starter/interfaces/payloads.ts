@@ -1,12 +1,11 @@
 import { Outcome } from "@eGroupTeam/utils/getDeviceInfo";
-import { RootState } from "./utils";
 
-export type LogPayload = {
+export type LogApiPayload = {
   function: string;
   browserDescription: string;
   jsonData: {
     action?: unknown;
-    store?: RootState;
+    store?: unknown;
     deviceInfo?: Outcome[];
     data?: unknown;
   };

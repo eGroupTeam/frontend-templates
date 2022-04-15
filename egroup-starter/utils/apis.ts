@@ -1,11 +1,11 @@
 import { fetcher } from "@eGroupTeam/hooks/apis/fetchers";
-import { LogPayload } from "interfaces/payloads";
+import { LogApiPayload } from "interfaces/payloads";
 
 const tools = {
   /**
    * Log errors.
    */
-  createLog: (payload?: LogPayload) => fetcher.post("/logs", payload),
+  createLog: (payload?: LogApiPayload) => fetcher.post("/logs", payload),
 };
 
 export default {

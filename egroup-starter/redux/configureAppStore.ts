@@ -1,19 +1,13 @@
-import { SET_DIALOG_DATA, dialogs } from "@eGroupTeam/redux-modules/dialogs";
-import {
-  SET_SNACKBAR_DATA,
-  snackbars,
-} from "@eGroupTeam/redux-modules/snackbars";
+import { SET_DIALOG_DATA } from "@eGroupTeam/redux-modules/dialogs";
+import { SET_SNACKBAR_DATA } from "@eGroupTeam/redux-modules/snackbars";
 import { configureStore } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux";
 
-import { publicPages } from "./publicPages";
+import { rootReducer } from "./root";
 
 function configureAppStore() {
   const store = configureStore({
-    reducer: {
-      dialogs,
-      snackbars,
-      publicPages,
-    },
+    reducer: rootReducer,
     // Correct typings for the Dispatch type
     // https://redux-toolkit.js.org/usage/usage-with-typescript
     middleware: (getDefaultMiddleware) =>
@@ -31,3 +25,4 @@ function configureAppStore() {
 
 export const store = configureAppStore();
 export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch = () => useDispatch<AppDispatch>();

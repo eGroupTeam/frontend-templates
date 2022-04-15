@@ -19,3 +19,5 @@ export const rootReducer = (state: CombinedState<any>, action: AnyAction) => {
 
   return appReducer(state, action);
 };
+
+export type RootState = ReturnType<typeof rootReducer>;
