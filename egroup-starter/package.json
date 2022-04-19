@@ -7,7 +7,8 @@
     "build": "next build && next-sitemap",
     "start": "next start",
     "test": "jest",
-    "lint": "eslint . --ext .ts,.tsx --fix",
+    "lint": "eslint . --ext",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -80,6 +81,7 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,json,md}": [
+      "yarn lint:fix",
       "prettier --write"
     ]
   }
