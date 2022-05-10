@@ -3,8 +3,8 @@ import Layout from "components/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "redux/configureAppStore";
 
-import { decrement, increment } from "./redux";
-import { getCounts } from "./selectors";
+import { decrement, increment } from "redux/basic";
+import { getCounts } from "redux/basic/selectors";
 
 const Basic = function () {
   const dispatch = useDispatch<AppDispatch>();

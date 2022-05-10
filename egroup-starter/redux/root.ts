@@ -1,23 +1,13 @@
-import { AnyAction, CombinedState, combineReducers } from "redux";
+import { combineReducers } from "redux";
 import { dialogs } from "@eGroupTeam/redux-modules/dialogs";
 import { snackbars } from "@eGroupTeam/redux-modules/snackbars";
 
-import { logout } from "components/PrivateLayout/actions";
-import { publicPages } from "./publicPages";
+import basic from "./basic";
 
-const appReducer = combineReducers({
+export const rootReducer = combineReducers({
   dialogs,
   snackbars,
-  publicPages,
+  basic,
 });
-
-export const rootReducer = (state: CombinedState<any>, action: AnyAction) => {
-  if (action.type === logout.type) {
-    // eslint-disable-next-line no-param-reassign
-    state = undefined;
-  }
-
-  return appReducer(state, action);
-};
 
 export type RootState = ReturnType<typeof rootReducer>;

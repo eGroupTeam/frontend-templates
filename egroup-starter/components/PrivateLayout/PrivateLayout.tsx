@@ -9,7 +9,7 @@ import NextLink from "next/link";
 import Link from "@eGroupTeam/material/Link";
 import Button from "@eGroupTeam/material/Button";
 
-import { logout } from "./actions";
+import { logout } from "redux/privateLayout";
 
 type PrivateLayoutProps = {
   children?: ReactNode;
