@@ -24,6 +24,7 @@ const PrivateLayout: FC<PrivateLayoutProps> = function PrivateLayout(props) {
 
   const handleLogin = () => {
     setCookie("hasLoginCookie", "true");
+    // eslint-disable-next-line no-alert
     alert("Login !");
   };
 

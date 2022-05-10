@@ -18,6 +18,7 @@ const Layout: FC<LayoutProps> = function Layout(props) {
 
   const handleLogin = () => {
     setCookie("hasLoginCookie", "true");
+    // eslint-disable-next-line no-alert
     alert("Login !");
   };
 
